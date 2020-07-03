@@ -16,7 +16,7 @@ This repository contains the completed Xcode project following the [How to Build
 
 ### Configuration
 
-You should place your [Stream Chat](https://getstream.io/chat) and [Dolby.io](https://dolby.io) credentials in [`AppDelegate.swift`](VirtualClassroom/AppDelegate.swift#L21-L23).
+You should place your [Stream Chat](https://getstream.io/chat) and [Dolby.io](https://dolby.io) credentials in [`AppDelegate.swift`](VirtualClassroom/AppDelegate.swift#L18-L20).
 
 ### Dependencies
 
