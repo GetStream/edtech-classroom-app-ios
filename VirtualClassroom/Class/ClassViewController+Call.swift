@@ -12,7 +12,7 @@ import VoxeetUXKit
 extension ClassViewController {
     func startCall() {
         let options = VTConferenceOptions()
-        options.alias = "student+teacher"
+        options.alias = "history_class_id"
         VoxeetSDK.shared.conference.create(options: options, success: { conf in
             VoxeetSDK.shared.conference.join(conference: conf)
         }, fail: { error in

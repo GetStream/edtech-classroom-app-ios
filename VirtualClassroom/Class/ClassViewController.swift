@@ -21,7 +21,7 @@ class ClassViewController: ChatViewController {
         id: "teacher",
         extraData: UserExtraData(
             name: "Teacher",
-            avatarURL: URL(string: "https://thispersondoesnotexist.com/image")
+            avatarURL: URL(string: "https://raw.githubusercontent.com/GetStream/edtech-classroom-app-ios/main/meta/teacher.png")
         )
     )
     
