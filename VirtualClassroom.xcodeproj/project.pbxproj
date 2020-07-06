@@ -22,9 +22,11 @@
 		808A85FC24AC0805008488E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808A85FA24AC0805008488E7 /* Main.storyboard */; };
 		808A85FE24AC0806008488E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 808A85FD24AC0806008488E7 /* Assets.xcassets */; };
 		808A860124AC0806008488E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808A85FF24AC0806008488E7 /* LaunchScreen.storyboard */; };
+		8DB4F2178E25851EBBDF28A7 /* Pods_VirtualClassroom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B450CDBE649E6079043F02C6 /* Pods_VirtualClassroom.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A70025B666B761E85FA4123 /* Pods-VirtualClassroom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VirtualClassroom.debug.xcconfig"; path = "Target Support Files/Pods-VirtualClassroom/Pods-VirtualClassroom.debug.xcconfig"; sourceTree = "<group>"; };
 		8040754024AD784C00F2C9D8 /* JoinViewController+Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JoinViewController+Views.swift"; sourceTree = "<group>"; };
 		8040754224AD791900F2C9D8 /* JoinViewController+Handlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JoinViewController+Handlers.swift"; sourceTree = "<group>"; };
 		8040754424AD79AF00F2C9D8 /* JoinViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JoinViewController+Constraints.swift"; sourceTree = "<group>"; };
@@ -42,6 +44,8 @@
 		808A85FD24AC0806008488E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		808A860024AC0806008488E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		808A860224AC0806008488E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B450CDBE649E6079043F02C6 /* Pods_VirtualClassroom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VirtualClassroom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF102529EC3F070959A0AC7B /* Pods-VirtualClassroom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VirtualClassroom.release.xcconfig"; path = "Target Support Files/Pods-VirtualClassroom/Pods-VirtualClassroom.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DB4F2178E25851EBBDF28A7 /* Pods_VirtualClassroom.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +97,7 @@
 				808A85F324AC0805008488E7 /* VirtualClassroom */,
 				808A85F224AC0805008488E7 /* Products */,
 				EAAB5A50072B41D64B42DC0D /* Pods */,
+				E1491F77975E8F9F99D726E3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,9 +125,19 @@
 			path = VirtualClassroom;
 			sourceTree = "<group>";
 		};
+		E1491F77975E8F9F99D726E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B450CDBE649E6079043F02C6 /* Pods_VirtualClassroom.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EAAB5A50072B41D64B42DC0D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				2A70025B666B761E85FA4123 /* Pods-VirtualClassroom.debug.xcconfig */,
+				DF102529EC3F070959A0AC7B /* Pods-VirtualClassroom.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -133,9 +149,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 808A860524AC0806008488E7 /* Build configuration list for PBXNativeTarget "VirtualClassroom" */;
 			buildPhases = (
+				50D99F7AB03BA6F70CEC6BF9 /* [CP] Check Pods Manifest.lock */,
 				808A85ED24AC0805008488E7 /* Sources */,
 				808A85EE24AC0805008488E7 /* Frameworks */,
 				808A85EF24AC0805008488E7 /* Resources */,
+				FEE0521E4D37FD555240BE4E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,6 +209,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50D99F7AB03BA6F70CEC6BF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VirtualClassroom-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEE0521E4D37FD555240BE4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VirtualClassroom/Pods-VirtualClassroom-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VirtualClassroom/Pods-VirtualClassroom-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VirtualClassroom/Pods-VirtualClassroom-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		808A85ED24AC0805008488E7 /* Sources */ = {
@@ -350,6 +410,7 @@
 		};
 		808A860624AC0806008488E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A70025B666B761E85FA4123 /* Pods-VirtualClassroom.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -368,6 +429,7 @@
 		};
 		808A860724AC0806008488E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF102529EC3F070959A0AC7B /* Pods-VirtualClassroom.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

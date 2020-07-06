@@ -10,18 +10,18 @@ import StreamChat
 
 extension JoinViewController {
     func setupHandlers() {
-        studentButton.addTarget(self, action: #selector(handlePatientButtonPress), for: .touchUpInside)
-        teacherButton.addTarget(self, action: #selector(handleDoctorButtonPress), for: .touchUpInside)
+        studentButton.addTarget(self, action: #selector(handleStudentButtonPress), for: .touchUpInside)
+        teacherButton.addTarget(self, action: #selector(handleTeacherButtonPress), for: .touchUpInside)
     }
     
-    @objc func handlePatientButtonPress() {
+    @objc func handleStudentButtonPress() {
         let classVC = ClassViewController()
         classVC.setupStudent()
         
         navigationController?.pushViewController(classVC, animated: true)
     }
     
-    @objc func handleDoctorButtonPress() {
+    @objc func handleTeacherButtonPress() {
         let classVC = ClassViewController()
         classVC.setupTeacher()
         
