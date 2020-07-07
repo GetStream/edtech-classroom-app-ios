@@ -12,7 +12,7 @@ import StreamChatClient
 class ClassViewController: ChatViewController {
     lazy var channel = Client.shared.channel(
         type: .messaging,
-        id: "Classroom",
+        id: "history_class_id",
         extraData: ChannelExtraData(name: "History Class", imageURL: nil)
     )
     
